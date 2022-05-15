@@ -4,17 +4,21 @@
 
 void * func_equacao_reduzida_reta(
     int n, 
-    float matriz[2][2], 
+    float matriz[n][2], 
     float *b, 
     float *m
 );
 
 
 void main(){
-    int n=2; 
+    int n; 
     float b, m;
     float x, y;
-    float matriz[2][2];
+    
+    printf("Quantidade de pontos: ");
+    scanf("%d", &n);
+    
+    float matriz[n][2];
     
     for(int linha = 0; linha < n; linha++){
         printf("------\n");
@@ -35,7 +39,7 @@ void main(){
 
 void * func_equacao_reduzida_reta(
     int n, 
-    float matriz[2][2], 
+    float matriz[n][2], 
     float *b, 
     float *m
 ){
