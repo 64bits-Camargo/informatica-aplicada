@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 
-void bhaskara(float a, float b, float c, float *x1, float *x2);
+void bhaskara(float a, float b, float c, float *x1,  float *x2);
 
 
 void main() {
@@ -19,7 +19,7 @@ void main() {
 }
 
 
-void bhaskara(float a, float b, float c, float *x1, float *x2){
+void bhaskara(float a, float b, float c,  float *x1,  float *x2){
 
     float delta = sqrt((pow(b, 2) - (4 * a * c)));
     
