@@ -41,9 +41,11 @@ void main(){
 
     func_regressao_linear(n, matriz, &b, &m);
     printf("\nRegressao:\tM=%.2f\tB=%.2f\n", m, b);
-
-    func_equacao_reduzida(matriz, &b, &m);
-    printf("Reduzida:\tM=%.2f\tB=%.2f\n", m, b);
+    
+    if(n == 2){
+        func_equacao_reduzida(matriz, &b, &m);
+        printf("Reduzida:\tM=%.2f\tB=%.2f\n", m, b);
+    }
 }
 
 
