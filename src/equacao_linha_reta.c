@@ -44,7 +44,7 @@ void * func_equacao_reduzida_reta(
     float *m
 ){
     float x, y;
-    float coeficiente_angular;
+    float d;
     float sumx=0, sumxsq=0;
     float sumy=0, sumxy=0;
 
@@ -58,8 +58,8 @@ void * func_equacao_reduzida_reta(
         sumxy = sumxy + (x * y);
     }
 
-    coeficiente_angular = n * sumxsq - sumx * sumx;
+    d = n * sumxsq - sumx * sumx;
 
-    *m = (n * sumxy - sumx * sumy) / coeficiente_angular;
-    *b = ( sumy * sumxsq - sumx * sumxy ) / coeficiente_angular;
+    *m = (n * sumxy - sumx * sumy) / d;
+    *b = ( sumy * sumxsq - sumx * sumxy ) / d;
 }
