@@ -78,7 +78,8 @@ void * func_regressao_linear(
 void * func_equacao_reduzida(
     float matriz[2][2], 
     float *b, 
-    float *m){
+    float *m
+){
     
     float x1 = matriz[0][0];
     float y1 = matriz[0][1];
