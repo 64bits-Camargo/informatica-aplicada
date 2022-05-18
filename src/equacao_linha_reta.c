@@ -2,7 +2,7 @@
 // y = b + mx
 
 
-void * func_equacao_reduzida_reta(
+void * func_regressao_linear(
     int n, 
     float matriz[n][2], 
     float *b, 
@@ -32,12 +32,12 @@ void main(){
         matriz[linha][1] = y;
     }
 
-    func_equacao_reduzida_reta(n, matriz, &b, &m); 
+    func_regressao_linear(n, matriz, &b, &m); 
     printf("\nM=%.2f\tB=%.2f\n", m, b);
 }
 
 
-void * func_equacao_reduzida_reta(
+void * func_regressao_linear(
     int n, 
     float matriz[n][2], 
     float *b, 
