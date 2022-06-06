@@ -2,7 +2,7 @@
 // y = b + mx
 
 
-void * func_regressao_linear(
+void* func_regressao_linear(
     int n, 
     float matriz[n][2], 
     float *b, 
@@ -10,7 +10,7 @@ void * func_regressao_linear(
 );
 
 
-void * func_equacao_reduzida(
+void* func_equacao_reduzida(
     float matriz[2][2], 
     float *b, 
     float *m
@@ -49,7 +49,7 @@ void main(){
 }
 
 
-void * func_regressao_linear(
+void* func_regressao_linear(
     int n, 
     float matriz[n][2], 
     float *b, 
@@ -77,7 +77,7 @@ void * func_regressao_linear(
 }
 
 
-void * func_equacao_reduzida(
+void* func_equacao_reduzida(
     float matriz[2][2], 
     float *b, 
     float *m
